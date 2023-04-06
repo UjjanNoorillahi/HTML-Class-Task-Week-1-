@@ -1,0 +1,71 @@
+<!-- Eample - 1 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function getData(){
+        //1 - Create XMLHTTP object
+        var xhr = new XMLHttpRequest();
+
+        //2 - creating a connection 
+        xhr.open("GET", "content.txt", true) // here true means it return Asyc responce where the application don't wait for the responce 
+
+        //3 - Adding a callback for responce 
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && this.status == 200){
+                alert(xhr.responseText);
+            }
+        }
+            xhr.send();
+    }
+    </script>
+
+</head>
+<body>
+    
+    <button onclick="getData()">Get Data!</button>
+</body>
+</html> -->
+
+
+<!-- Example - 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function getData(){
+        //1 - Create XMLHTTP object
+        var xhr = new XMLHttpRequest();
+
+        //2 - creating a connection 
+        xhr.open("GET", "https://dummyjson.com/products/1", true) // here true means it return Asyc responce where the application don't wait for the responce 
+
+        //3 - Adding a callback for responce 
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && this.status == 200){
+                alert(xhr.responseText);
+            }
+        }
+            xhr.send();
+    }
+    </script>   
+
+</head>
+<body>
+    
+    <button onclick="getData()"> Get Data!</button>
+</body>
+</html>

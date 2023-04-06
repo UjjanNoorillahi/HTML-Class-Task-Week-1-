@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        This is main content area
+        <p>
+            Sample P
+        </p>
+
+        <p>
+            Sample P
+        </p>
+        <p>
+            Another p
+        </p>
+
+        <a href="#">link</a>
+        <p id="demo">Another p with a class</p>
+
+
+
+
+    </div>
+
+    <script>
+
+let person = prompt("Please your email");
+let x = document.querySelector("a");
+x.href = person;
+
+// x.innerHTML = link;
+// x.href = link;
+    </script>
+
+
+<script>
+
+    function addNewElement(){
+
+        let x = document.querySelector("#demo");
+
+        const new_element = document.createElement("p");
+
+        new_element.setAttribute("id", "p1");
+        x.appendChild(new_element);
+    }
+</script>
+</body>
+</html>

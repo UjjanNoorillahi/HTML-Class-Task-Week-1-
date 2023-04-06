@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+	<p id="my-paragraph">Click the button to change this text.</p>
+	<button id="my-button">Click Me!</button>
+
+	<script>
+		$(document).ready(function(){
+			$("#my-button").click(function(){
+				$("#my-paragraph").text("This text has been changed by jQuery!");
+			});
+		});
+	</script>
+</body>
+</html>
